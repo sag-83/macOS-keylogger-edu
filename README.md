@@ -1,25 +1,59 @@
 # 🛡️ macOS Educational Keylogger
 
-This project is a Python-based keylogger built exclusively for **ethical and educational purposes**. Designed to run on **macOS**, it demonstrates how input capture works, how operating systems manage permissions, and how attackers might simulate malicious behavior — so defenders can understand, detect, and prevent it.
+This Python-based keylogger was created for **educational and ethical use only**, specifically on **macOS**. It's designed to demonstrate how input capturing works, how permissions are managed, and how defenders can identify such behavior.
 
-> ⚠️ **Disclaimer:** This tool is for personal learning and cybersecurity training only. Do not run this on any machine without full knowledge and consent.
-
----
-
-## 🚀 Features
-
-- ✅ Captures and logs all keystrokes in real time
-- ✅ Live terminal output that updates every 10 seconds
-- ✅ Formats special keys like Enter, Backspace, and Space
-- ✅ Uses threading for non-blocking performance
-- ✅ Compatible with **macOS Accessibility security model**
-- ✅ Log files are ignored via `.gitignore` to avoid accidental uploads
+> ⚠️ **Disclaimer**: Do not use this tool on any device without **explicit permission**. This is strictly for cybersecurity education and training purposes.
 
 ---
 
-## 📸 Demo Preview
+## 🚀 Key Features
+- ✅ Logs all keystrokes in real-time
+- ✅ Live terminal output (updates every 10s)
+- ✅ Recognizes special keys like Enter, Space, and Backspace
+- ✅ Multithreaded for smooth performance
+- ✅ macOS Accessibility API compatible
+- ✅ Log files auto-ignored via `.gitignore`
 
-```plaintext
-[Live log preview] >>>
-this is a test123
-password1!
+---
+
+## 🧭 How to Run
+
+1. **Create a virtual environment**
+   ```bash
+   python3 -m venv keylogger-env
+   source keylogger-env/bin/activate
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install pynput
+   ```
+
+3. **Navigate to your script location**
+   ```bash
+   cd ~/Desktop/key_logger
+   ```
+
+4. **Run the keylogger**
+   ```bash
+   python3 keylogger.py
+   ```
+
+Logs are saved as `.txt` files with timestamps in the filename.
+
+---
+
+## 📦 Demo Output (Sample Log)
+```
+<shift_r>I am so happy right now that my first project is working.
+```
+
+---
+
+## 🧹 Note
+Make sure `keylog_*.txt` is listed in `.gitignore` to prevent sensitive logs from being uploaded.
+
+---
+
+## 👨‍💻 Author
+Built  by Sparsh for educational purposes.
